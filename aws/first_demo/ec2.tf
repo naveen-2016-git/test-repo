@@ -3,7 +3,7 @@ resource "aws_instance" "navawsserver" {
   instance_type = "t2.nano"
 
   tags = {
-    Name = "Naveen-Techlanders-aws-ec2-instance-v1"
+    Name = "Naveen-Techlanders-aws-ec2-instance-v2"
     Env = "Dev"
   }
 }
