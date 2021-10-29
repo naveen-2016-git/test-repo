@@ -1,19 +1,19 @@
-resource "aws_instance" "myawsserver" {
+resource "aws_instance" "navawsserver" {
   ami = "ami-0603cbe34fd08cb81"
   instance_type = "t2.nano"
 
   tags = {
-    Name = "Techlanders-aws-ec2-instance-v1"
+    Name = "Naveen-Techlanders-aws-ec2-instance-v1"
     Env = "Dev"
   }
 }
 
-output "myawsserver-ip" {
-  value = aws_instance.myawsserver.public_ip
+output "navawsserver-ip" {
+  value = aws_instance.navawsserver.public_ip
 }
 
 output "myserver-PrivateIP" {
-  value = aws_instance.myawsserver.private_ip
+  value = aws_instance.navawsserver.private_ip
 }
 
 
